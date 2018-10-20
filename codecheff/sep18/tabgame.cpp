@@ -23,22 +23,23 @@ int main(){
         // first block
         table[1][1] = table[1][0] == 0 || table[0][1] == 0 ? 0 : 1;
         // first row 
-        for(int p = 2; p <= m_length; p++)
+        for(int p = 2; p <= n_length; p++)
             table[1][p] = table[1][p-1] == 1 || table[0][p] == 0 ? 0 : 1;
         // first column
-        for(int q = 2; q <= n_length; q++)
+        for(int q = 2; q <= m_length; q++)
             table[q][1] = table[q][0] == 0 || table[q-1][1] == 1 ? 0 : 1;
         // all other blocks
-        for(int p = 3; p <= n_length; p++)
-            for(int q = 3; q <= m_length;q++){
+        for(int p = 3; p <= m_length; p++)
+            for(int q = 3; q <= n_length;q++){
                 table[p][q] = table[p-1][q] == 1 || table[p][q-1] == 1 ? 0 : 1;
             }
         //table    
-        //  for(int p = 0; p <= n_length; p++){
-        //     for(int q = 0; q <= m_length;q++)
-        //         cout << table[p][q] << " ";
-        //     cout << endl;
-        //  }
+        cout << e
+         for(int p = 0; p <= m_length; p++){
+            for(int q = 0; q <= n_length;q++)
+                cout << table[p][q] << " ";
+            cout << endl;
+         }
         cin >> q;
         for(int j = 0; j < q; j++){
             cin >> x >> y;
