@@ -3,6 +3,7 @@
         "*.js": "javascriptreact",
         "iostream": "cpp",
         "limits": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "xutility": "cpp"
     }
 }
