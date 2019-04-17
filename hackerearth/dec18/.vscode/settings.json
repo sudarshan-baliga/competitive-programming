@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "iostream": "cpp",
-        "ostream": "cpp",
-        "cmath": "cpp"
-    },
-    "python.pythonPath": "C:\\Users\\sudarshan\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "python.linting.enabled": false
-}

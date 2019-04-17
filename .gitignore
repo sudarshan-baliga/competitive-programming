@@ -1,3 +1,6 @@
 /NetBanking/nbproject/private/
 /NetBanking/build/
 /NetBanking/dist/
+.vscode
+*.out
+

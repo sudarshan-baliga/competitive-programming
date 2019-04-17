@@ -1,0 +1,32 @@
+import math
+n, m = map(int, input().split())
+a = [int(x) for x in input().split()]
+b = [int(x) for x in input().split()]
+# reuse the array a for storing product
+for i in range(n):
+    a[i] *= b[i]
+# let us assume that ans is mid
+low = 0
+high = answer = max(a)
+while low <= high:
+    mid = (low+high)//2
+    # keep a flag to check if distributing is over
+    possible = True
+    temp = m
+    for i in range(n):
+        if(a[i] > mid):
+            required = math.ceil((a[i] - mid) / b[i])
+            m -= required
+        if(m < 0):
+           possible = False
+           break
+    m = temp
+    # if current mid is not possible then increment low to mid
+    # print(low, high, mid, flag)
+    if possible:
+        high = mid - 1
+				answer = min(mid,answer)
+		else:
+       	low = mid + 1
+    print(low, high, mid)	
+print(answer)

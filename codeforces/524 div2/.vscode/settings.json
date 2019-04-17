@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "iostream": "cpp",
-        "cmath": "cpp"
-    },
-    "python.pythonPath": "/usr/bin/python3"
-}
